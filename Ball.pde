@@ -5,10 +5,11 @@ class Ball{
  float x;
  float y;
 void begin_move(){
-  x=mouseX;
+  x=bar.x;
+  y=height-60;
 }
 void move(){
- 
+
  x+=xSpeed;
  y-=ySpeed;
  if(x<7.5 || x>width-7.5){
@@ -17,12 +18,7 @@ void move(){
  if(y<7.5 || y>height-7.5){
    ySpeed *=-1;
  }
-/* if(x<mouseX-35&&y>height-55){ 
-   ySpeed*=-1;
- }
- if(x>mouseX+35&&y>height-55){
-   ySpeed*=-1;
- }*/
+
 }
 
 void display(){
