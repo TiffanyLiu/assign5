@@ -24,7 +24,7 @@ void setup(){
    row=i/10;
    float brickX=100+col*50;
    float brickY=50+row*50;
-  bricks[i]=new Brick((int)brickX,(int)brickY); 
+  bricks[i]=new Brick(brickX,brickY); 
  }
 // brick=new Brick(50,50);
 gameState=GAME_START;
