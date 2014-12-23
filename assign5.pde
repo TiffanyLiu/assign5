@@ -22,9 +22,9 @@ void setup(){
  for(int i=0;i<50;i++){
    col=i%10;
    row=i/10;
-   int brickX=100+col*50;
-   int brickY=50+row*50;
-  bricks[i]=new Brick(brickX,brickY); 
+   float brickX=100+col*50;
+   float brickY=50+row*50;
+  bricks[i]=new Brick(int(brickX),int(brickY)); 
  }
 // brick=new Brick(50,50);
 gameState=GAME_START;
