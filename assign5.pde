@@ -4,8 +4,6 @@ Bar  bar;
 Brick [] bricks;
 Brick brick;
 
-float brickX;
-float brickY; 
 int col;
 int row;
 int lifeCount=3;
@@ -24,9 +22,9 @@ void setup(){
  for(int i=0;i<50;i++){
    col=i%10;
    row=i/10;
-   brickX=100+col*50;
-   brickY=50+row*50;
-  bricks[i]=new Brick(brickX,brickY); 
+   float brickX=100+col*50;
+   float brickY=50+row*50;
+  bricks[i]=new Brick((int)brickX,(int)brickY); 
  }
 // brick=new Brick(50,50);
 gameState=GAME_START;
