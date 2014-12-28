@@ -1,7 +1,7 @@
 Ball myBall;
 Bar  bar;
 Brick [] bricks;
-Brick brick;
+//Brick brick;
 
 
 int col;
@@ -23,7 +23,7 @@ void setup(){
  lifeCount=3;
  brickCount=50;
  bar=new Bar();
- bricks=new Brick[50];
+ //bricks=new Brick[50];
  for(int i=0;i<50;i++){
    col=i%10;
    row=i/10;
@@ -119,6 +119,9 @@ void checkBrickHit(){
     && myBall.y+(myBall.size/2)>=int(bricks[i].y-(bricks[i].size/2))){
       removeBrick(i);
     }}}
+/*void drawbricks(){
+int i=0;*/
+
 void removeBrick(int i){
  bricks[i].x=2000;
  bricks[i].y=2000;
